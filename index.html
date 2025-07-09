@@ -1,118 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MotoServo</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    .hero {
-      background-color: #a5d6a7;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 2rem;
-      text-align: center;
-    }
-    .card h3 {
-      margin-bottom: 1rem;
-      color: #2e7d32;
-    }
-    .contact {
-      background-color: #e8f5e9;
-      padding: 2rem;
-      text-align: center;
-    }
-    .contact h3 {
-      margin-bottom: 1rem;
-    }
-    footer {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotoServo Plans with Sign Up</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-  <header>
-    <h1>MotoServo</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Modern Vehicle Contract Solutions</h2>
-    <p>Efficient, reliable, and smart vehicle servicing tailored to your needs.</p>
-  </section>
-
-  <section id="services" class="services">
-    <div class="card">
-      <h3>Fleet Management</h3>
-      <p>Streamline your vehicle contracts and optimize fleet performance.</p>
+  <section class="py-12 px-6">
+    <!-- Logo Centered -->
+    <div class="flex justify-center mb-8">
+      <a href="/" aria-label="MotoServo Homepage">
+        <img src="images/motoservo-logo.png" alt="MotoServo Logo" class="h-16 hover:opacity-90 transition duration-200" />
+      </a>
     </div>
-    <div class="card">
-      <h3>Smart Maintenance</h3>
-      <p>Predictive maintenance scheduling and analytics tools to reduce downtime.</p>
+
+    <!-- Heading -->
+    <div class="max-w-6xl mx-auto text-center mb-10">
+      <h2 class="text-4xl font-bold">Choose Your Plan</h2>
+      <p class="text-gray-500 mt-2">Simple, transparent pricing tailored for you</p>
     </div>
-    <div class="card">
-      <h3>Compliance Support</h3>
-      <p>Stay updated with regulations and ensure complete documentation.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+      <!-- GO Plan Form -->
+      <form
+        action="https://formspree.io/f/xldnyokk"
+        method="POST"
+        class="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 p-8 flex flex-col"
+      >
+        <h3 class="text-2xl font-semibold">GO Premium Plan</h3>
+        <p class="text-green-600 text-4xl font-bold mt-4">$1000<span class="text-lg text-gray-500">/yr</span></p>
+        <ul class="mt-6 space-y-2 text-left text-gray-600 flex-grow">
+          <li>✅ Everything in GO Plan</li>
+          <li>✅ No verification needed</li>
+          <li>✅ Avoid the frustration of having to part with your vehcile</li>
+          <li>✅ Vehicles covered minimum of 163,000 miles to 250,000 miles</li>
+          <li>✅ No vehicle mechanical work done in the year receive 50% back of membership fee</li>
+        </ul>
+
+        <!-- Hidden input to identify plan -->
+        <input type="hidden" name="plan" value="GO Plan" />
+
+        <!-- Email Input -->
+        <label for="email-go" class="sr-only">Email for GO Plan</label>
+        <input
+          id="email-go"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+        />
+
+        <button
+          type="submit"
+          class="mt-6 bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+        >
+          Sign Up
+        </button>
+      </form>
+
+      <!-- GO PLUS Plan Form -->
+      <form
+        action="https://formspree.io/f/xldnyokk"
+        method="POST"
+        class="relative bg-white rounded-2xl shadow-xl border-2 border-green-600 p-8 transform hover:scale-105 transition duration-300 flex flex-col"
+      >
+        <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">
+          Most Popular
+        </div>
+        <h3 class="text-2xl font-semibold">GO PLUS Plan</h3>
+        <p class="text-green-700 text-4xl font-bold mt-4">$130<span class="text-lg text-gray-500">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-left text-gray-600 flex-grow">
+          <li>✅ Everything in GO Plan</li>
+          <li>✅ No verification needed</li>
+          <li>✅ Avoid the frustration of having to part with your vehcile</li>
+          <li>✅ Vehicles covered minimum of 163,000 miles to 250,000 miles</li>
+          <li>✅ No vehicle mechanical work done in the year receive 25% back of membership fee</li>
+        </ul>
+
+        <!-- Hidden input to identify plan -->
+        <input type="hidden" name="plan" value="GO PLUS Plan" />
+
+        <!-- Email Input -->
+        <label for="email-go-plus" class="sr-only">Email for GO PLUS Plan</label>
+        <input
+          id="email-go-plus"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+        />
+
+        <button
+          type="submit"
+          class="mt-6 bg-green-700 text-white py-3 rounded-xl font-semibold hover:bg-green-800 transition"
+        >
+          Sign Up
+        </button>
+      </form>
     </div>
   </section>
-
-  <section id="contact" class="contact">
-    <h3>Contact Us</h3>
-    <p>Email: support@motoservo.com</p>
-    <p>Phone: (555) 123-4567</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 MotoServo. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
