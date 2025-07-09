@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,13 +8,15 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
   <section class="py-12 px-6">
     <!-- Logo Centered -->
     <div class="flex justify-center mb-8">
       <a href="/" aria-label="MotoServo Homepage">
-        <img src="images/motoservo-logo.png" alt="MotoServo Logo" class="h-16 hover:opacity-90 transition duration-200" />
+        <img src="images/motoservologo.png" alt="MotoServo Logo"
+          class="h-16 hover:opacity-90 transition duration-200" />
       </a>
     </div>
 
@@ -26,11 +29,8 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
       <!-- GO Plan Form -->
-      <form
-        action="https://formspree.io/f/xldnyokk"
-        method="POST"
-        class="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 p-8 flex flex-col"
-      >
+      <form action="https://formspree.io/f/xldnyokk" method="POST"
+        class="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 p-8 flex flex-col">
         <h3 class="text-2xl font-semibold">GO Premium Plan</h3>
         <p class="text-green-600 text-4xl font-bold mt-4">$1000<span class="text-lg text-gray-500">/yr</span></p>
         <ul class="mt-6 space-y-2 text-left text-gray-600 flex-grow">
@@ -46,29 +46,18 @@
 
         <!-- Email Input -->
         <label for="email-go" class="sr-only">Email for GO Plan</label>
-        <input
-          id="email-go"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-        />
+        <input id="email-go" type="email" name="email" placeholder="Enter your email" required
+          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" />
 
-        <button
-          type="submit"
-          class="mt-6 bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
-        >
+        <button type="submit"
+          class="mt-6 bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
           Sign Up
         </button>
       </form>
 
       <!-- GO PLUS Plan Form -->
-      <form
-        action="https://formspree.io/f/xldnyokk"
-        method="POST"
-        class="relative bg-white rounded-2xl shadow-xl border-2 border-green-600 p-8 transform hover:scale-105 transition duration-300 flex flex-col"
-      >
+      <form action="https://formspree.io/f/xldnyokk" method="POST"
+        class="relative bg-white rounded-2xl shadow-xl border-2 border-green-600 p-8 transform hover:scale-105 transition duration-300 flex flex-col">
         <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">
           Most Popular
         </div>
@@ -87,19 +76,11 @@
 
         <!-- Email Input -->
         <label for="email-go-plus" class="sr-only">Email for GO PLUS Plan</label>
-        <input
-          id="email-go-plus"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
-        />
+        <input id="email-go-plus" type="email" name="email" placeholder="Enter your email" required
+          class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700" />
 
-        <button
-          type="submit"
-          class="mt-6 bg-green-700 text-white py-3 rounded-xl font-semibold hover:bg-green-800 transition"
-        >
+        <button type="submit"
+          class="mt-6 bg-green-700 text-white py-3 rounded-xl font-semibold hover:bg-green-800 transition">
           Sign Up
         </button>
       </form>
@@ -107,4 +88,5 @@
   </section>
 
 </body>
+
 </html>
