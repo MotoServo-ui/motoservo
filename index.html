@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MotoServo Plans with Sign Up</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-<header>
-    <h1>MotoServo</h1>
-  <nav>
-  <a href="plan-details.html">Plan Details</a>
-  <a href="about.html">About Us</a>
-</nav>
-</header>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 font-sans">
 
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="images/motoservologo.png" alt="MotoServo Logo" class="h-10" />
+        <h1 class="text-2xl font-bold text-green-700">MotoServo</h1>
+      </div>
+      <nav class="mt-4 md:mt-0 space-x-6 text-sm font-medium">
+        <a href="plan-details.html" class="text-gray-700 hover:text-green-700">Plan Details</a>
+        <a href="about.html" class="text-gray-700 hover:text-green-700">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Plan Selection Section -->
   <section class="py-12 px-6">
-    <!-- Logo Centered -->
-    <div class="flex justify-center mb-8">
-      <a href="/" aria-label="MotoServo Homepage">
-        <img src="images/motoservologo.png" alt="MotoServo Logo"
-          class="h-16 hover:opacity-90 transition duration-200" />
-      </a>
+    <div class="flex justify-center mb-10">
+      <img src="images/motoservologo.png" alt="MotoServo Logo" class="h-16 hover:opacity-90 transition duration-200" />
     </div>
 
-    <!-- Heading -->
     <div class="max-w-6xl mx-auto text-center mb-10">
       <h2 class="text-4xl font-bold">Choose Your Plan</h2>
       <p class="text-gray-500 mt-2">Simple, transparent pricing tailored for you</p>
@@ -35,7 +37,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
-      <!-- GO Plan Form -->
+      <!-- GO Premium Plan -->
       <form action="https://formspree.io/f/xldnyokk" method="POST"
         class="bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 p-8 flex flex-col">
         <h3 class="text-2xl font-semibold">GO Premium Plan</h3>
@@ -43,15 +45,12 @@
         <ul class="mt-6 space-y-2 text-left text-gray-600 flex-grow">
           <li>✅ Everything in GO Plan</li>
           <li>✅ No verification needed</li>
-          <li>✅ Avoid the frustration of having to part with your vehcile</li>
-          <li>✅ Vehicles covered minimum of 163,000 miles to 250,000 miles</li>
-          <li>✅ No vehicle mechanical work done in the year receive 50% back of membership fee</li>
+          <li>✅ Avoid the frustration of having to part with your vehicle</li>
+          <li>✅ Covers vehicles with 163,000–250,000 miles</li>
+          <li>✅ No repairs in a year? Get 50% of your fee back</li>
         </ul>
 
-        <!-- Hidden input to identify plan -->
-        <input type="hidden" name="plan" value="GO Plan" />
-
-        <!-- Email Input -->
+        <input type="hidden" name="plan" value="GO Premium Plan" />
         <label for="email-go" class="sr-only">Email for GO Plan</label>
         <input id="email-go" type="email" name="email" placeholder="Enter your email" required
           class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" />
@@ -62,7 +61,7 @@
         </button>
       </form>
 
-      <!-- GO PLUS Plan Form -->
+      <!-- GO PLUS Plan -->
       <form action="https://formspree.io/f/xldnyokk" method="POST"
         class="relative bg-white rounded-2xl shadow-xl border-2 border-green-600 p-8 transform hover:scale-105 transition duration-300 flex flex-col">
         <div class="absolute top-0 right-0 bg-green-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">
@@ -73,15 +72,12 @@
         <ul class="mt-6 space-y-2 text-left text-gray-600 flex-grow">
           <li>✅ Everything in GO Plan</li>
           <li>✅ No verification needed</li>
-          <li>✅ Avoid the frustration of having to part with your vehcile</li>
-          <li>✅ Vehicles covered minimum of 163,000 miles to 250,000 miles</li>
-          <li>✅ No vehicle mechanical work done in the year receive 25% back of membership fee</li>
+          <li>✅ Avoid the frustration of having to part with your vehicle</li>
+          <li>✅ Covers vehicles with 163,000–250,000 miles</li>
+          <li>✅ No repairs in a year? Get 25% of your fee back</li>
         </ul>
 
-        <!-- Hidden input to identify plan -->
         <input type="hidden" name="plan" value="GO PLUS Plan" />
-
-        <!-- Email Input -->
         <label for="email-go-plus" class="sr-only">Email for GO PLUS Plan</label>
         <input id="email-go-plus" type="email" name="email" placeholder="Enter your email" required
           class="mt-4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700" />
@@ -94,6 +90,10 @@
     </div>
   </section>
 
-</body>
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 mt-12">
+    <div class="text-center text-sm text-gray-500">&copy; 2025 MotoServo. All rights reserved.</div>
+  </footer>
 
+</body>
 </html>
