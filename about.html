@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us | MotoServo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | MotoServo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ===== SEO ===== -->
   <meta name="description" content="Learn how MotoServo helps high‑mileage vehicle owners keep their cars on the road with transparent, affordable repair‑sharing plans." />
@@ -27,22 +28,21 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-
-  <!-- Header (reuse) -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
-      <a href="/" class="flex items-center space-x-3" aria-label="MotoServo homepage">
-        <img src="images/motoservologo.png" alt="MotoServo logo" class="h-10">
-        <span class="text-2xl font-bold text-green-700">MotoServo</span>
-      </a>
-      <nav class="mt-4 md:mt-0 space-x-6 text-sm font-medium">
-        <a href="plan-details.html" class="text-gray-700 hover:text-green-700">Plan&nbsp;Details</a>
-        <a href="plans.html" class="text-gray-700 hover:text-green-700">Plans&nbsp;&amp;&nbsp;Sign Up</a>
-        <a href="howitworks.html" class="text-gray-700 hover:text-green-700">Plans&nbsp;&amp;&nbsp;How It Works</a>
-      </nav>
-    </div>
-  </header>
+ <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header with Logo -->
+    <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <img src="images/motoservologo.png" alt="MotoServo Logo" class="h-10" />
+          <h1 class="text-2xl font-bold text-green-700">MotoServo</h1>
+        </div>
+        <nav class="mt-4 md:mt-0 space-x-6 text-sm font-medium">
+          <a href="plan-details.html" class="text-gray-700 hover:text-green-700">Plan Details</a>
+          <a href="howitworks.html" class="text-gray-700 hover:text-green-700">How it Works</a>
+          <a href="plans" class="text-gray-700 hover:text-green-700">Select Plan and Pay</a>
+        </nav>
+      </div>
+    </header>
 
   <!-- Hero -->
   <section class="bg-gradient-to-r from-green-600 to-green-700 text-white py-20">
@@ -57,7 +57,7 @@
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <img src="images/garage.jpg" alt="Mechanic working on car" class="rounded-2xl shadow-lg">
       <div>
-        <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+        <h2 class="text-3xl font-bold mb-4">What Started It All</h2>
         <p class="text-gray-600 leading-relaxed">
           It started when our founder walked away from a dealership offer that undervalued his trusty 13‑year‑old car.
           Instead of settling, he created MotoServo — a community where owners share costs and keep their vehicles
@@ -67,40 +67,38 @@
     </div>
   </section>
 
-  <!-- Mission / Values -->
-  <section class="bg-white py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">What drives us</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold mb-2">Transparency</h3>
-          <p class="text-gray-600 text-sm">Clear pricing, no hidden clauses.</p>
-        </div>
-        <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold mb-2">Community</h3>
-          <p class="text-gray-600 text-sm">Members help members — everyone wins.</p>
-        </div>
-        <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
-          <h3 class="text-xl font-semibold mb-2">Reliability</h3>
-          <p class="text-gray-600 text-sm">Keep cars on the road, not in the shop.</p>
-        </div>
+ <!-- Main Content -->
+    <main class="container mx-auto py-12 px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center text-green-700">Our Story</h2>
+
+      <div class="bg-white shadow-lg rounded-xl p-8 space-y-4 max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+        <p>
+          Founded in <strong>2025 in Saint Joseph, Missouri</strong>, MotoServo was born out of real-world frustration and firsthand insight. While working as a parts manager in an animal food processing plant, the founder witnessed how critical systems, logistics, and downtime directly impacted business — and how costly it could be when technology failed. That same principle increasingly applies to vehicles today. With more repair shops opening to meet demand, many still lag behind when it comes to diagnosing and repairing modern vehicles driven by software and electronics.
+        </p>
+        <p>
+          MotoServo isn’t just a repair assistance service — it’s a <strong>strategic response to the evolution of the automobile itself</strong>. Gone are the days of the shade tree mechanic, where a socket wrench and know-how were enough. Today’s vehicles are rolling computers. ECUs, sensors, and networked modules now control everything from ignition timing to braking. As technology in cars advanced, the barrier to affordable repair also grew.
+        </p>
+        <p>
+          There’s no better symbol of American grit and ingenuity than the automobile industry. From replacing the horse-drawn carriage to becoming the backbone of national mobility, cars once gave every American a sense of independence. But what was once a luxury is now a necessity — and yet many can't afford the cost when something goes wrong.
+        </p>
+        <p>
+          That’s where MotoServo steps in: <strong>bridging the gap between modern vehicle complexity and affordable repair coverage</strong>. We're here to make sure drivers of older, high-mileage cars aren’t left behind in a world of high-tech transportation.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Call‑to‑Action -->
-  <section class="py-16">
-    <div class="max-w-md mx-auto text-center">
-      <h2 class="text-2xl font-bold">Ready to protect your ride?</h2>
-      <a href="plans.html"
-         class="inline-block mt-6 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-xl transition">
-        View Plans
-      </a>
-    </div>
-  </section>
+      <!-- Call to Action -->
+      <div class="mt-12 text-center">
+        <a href="plans" class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition">
+          View Plans
+        </a>
+      </div>
+    </main>
 
-  <footer class="bg-white border-t py-6">
-    <p class="text-center text-sm text-gray-500">&copy; 2025 MotoServo. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12 py-6">
+      <div class="container mx-auto text-center text-sm text-gray-500">
+        &copy; 2025 MotoServo. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
